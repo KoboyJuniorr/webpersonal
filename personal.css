@@ -1,0 +1,293 @@
+
+*, html {
+    margin: 0px;
+    padding: 0px;
+    list-style-type: none;
+    text-decoration: none;
+  }
+  body{
+    background-color: black;
+    margin: 0px;
+  }
+  /*navbar side*/
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom : 2px solid blue ;
+    height:80px;
+  }
+  .full-container .navbar .navbar-logo a{
+    margin-left: 70px;
+    font-size: 50px;
+  }
+  .navbar .navbar-logo a{
+    font-size: 1.6rem;
+    color : #ffff;
+    font-weight: 600;
+  }
+  .navbar .navbar-nav a:hover{
+    color: darkblue;
+  }
+  .navbar .navbar-logo a span {
+    color: blue;
+  }
+  .navbar .navbar-nav {
+    margin-right: 10px;
+  }
+  .navbar .navbar-nav a{ 
+    color: white;
+    margin: 0px 10px;
+    font-size : 20px;
+  }
+  /*content-side*/
+  .content{
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+    border-bottom: 2px solid rgba(23,39,148,0.872);
+    height: 500px;
+  }
+  .content .home-tx {
+    color: white;
+    margin-left: 60px;
+  }
+  
+  .content .home-tx h1 {
+    color: blue;
+    font-family: Poppins;
+    letter-spacing: 2px;
+    font-style: italic;
+    font-size: 50px;
+  }
+  
+  .content .home-tx h3 {
+    font-size: 30px;
+  }
+  
+  .content img {
+   margin-right: 40px;
+  }
+  
+  /* ABOUT SIDE */
+  .about{
+    border-bottom: 2px solid darkblue;
+    height: 900px;
+  }
+  
+  .about h1 {
+    display: flex;
+    color: white;
+    font-size: 30px;
+    font-style: italic;
+    justify-content: center;
+    padding-top:40px;
+    font-size: 30px;
+  }
+  .about h1 span {
+    color: blue;
+    
+  }
+  .about .abt-1 {
+    display:flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 50px;  
+  }
+  
+  .about .abt-1 p{
+    color: white;
+    margin-bottom: 40px;
+    margin-right: 20px;
+    font-size: 20px;
+  }
+  
+  .about .abt-1 img {
+    border-radius: 500px;
+    margin-left: 40px;
+  }
+
+  .about .abt-2 {
+    display:flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 80px;
+  }
+  
+  
+  .about .abt-2 img {
+    border-radius: 100%;
+  }
+  
+  .about .abt-2 p {
+    font-size: 20px;
+    margin-top: 40px;
+    color:white;
+  }
+  
+  .full-container {
+    display: flex;
+    height: 100vh;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  /*  SKILL SIDE*/
+  .skill {
+    height: 500px;
+    border-bottom: 2px solid darkblue;
+  }
+  
+  .skill h1 {
+    display: flex;
+    color: white;
+    justify-content: center;
+    letter-spacing: 2px;
+    font-style: italic;
+    margin-top: 30px;
+  }
+  .skill .skill1 {
+    justify-content: space-evenly;
+    display: flex;
+    margin-top: 15px;
+  }
+  .skill h2{
+    color: white;
+    font-style: italic;
+    letter-spacing:1px;
+  }
+  .skill span{
+    color: blue;
+  }
+  .skill .skill1 .fronend .logo-fr {
+    flex-direction: column;
+    display: flex;
+  }
+  .skill .skill1 .backend .logo-br {
+    flex-direction: column;
+    display: flex;
+  }
+  .skill .skill1 .tools .logo-tl {
+    flex-direction: column;
+    display: flex;
+  }
+   
+  /* CONTACT SIDE */
+  .contact-person {
+    height: 15S0vh;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .contact-person .contact-tx {
+    color: white;
+    display:flex;
+    font-size: 25px;
+    font-style: italic;
+    margin-bottom: 30px;
+    margin-top: 20px;
+  }
+  
+  .contact-person .contact-tx span {
+    color:blue;
+  }
+
+  .contact-person .tx2 {
+    color: white;
+    display:flex;
+    font-size: 25px;
+    font-style: italic;
+    margin-bottom: 30px;
+    margin-top: 30px;
+  }
+  
+  .contact-person .tx2 span {
+    color:blue;
+  }
+  
+ 
+  .img-contact {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 50px;
+    align-items: center;
+    margin-left: 70px;
+  }
+
+  .img-contact h3{
+    color: whitesmoke;
+    margin-left: 0px;
+    margin-right: 50px;
+  }
+ 
+  
+  footer {
+    background-color: darkblue;
+    height: 60px;
+    display: flex;
+    justify-content:  center;
+    align-items: center;
+    width: 100%;
+  }
+  
+  footer h4 {
+    color: white;
+    font-size: 20px;
+  }
+  
+  @media screen and (max-width: 500px){
+    .navbar {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      align-items: center;
+    }
+    
+    .navbar-logo {
+      margin-right: 50px;
+    }
+    
+    .content {
+      display: flex;
+      flex-wrap: wrap;
+    }
+    
+    .content .home-tx  h1{
+      font-size:30px;
+      margin-top: 20px;
+    }
+    
+    .content img {
+      width: 300px;
+      height:300px;
+      margin-bottom: 20px;
+    }
+    
+    .about{
+      justify-content: center;
+      height: 200vh;
+    }
+    
+    .about .abt-1 {
+      display: flex;
+      flex-wrap: wrap;
+    }
+    .about .abt-2 {
+      display: flex;
+      flex-wrap: wrap;
+    }
+    
+    .img-contact{
+      display: flex;
+      flex-wrap: wrap;
+    }
+    #footer {
+  
+      position: fixed;
+      height: 20vh;
+      bottom: 0;
+      width: 100%;
+      
+    }
+  }
